@@ -15,7 +15,7 @@
 }
 
 body {
-    background: black;
+    background: var(--primary-color);
     overflow-x: hidden;
 }
 
@@ -40,6 +40,32 @@ body {
     --thirdf-color: #{$DFcolor3};
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Scroll to top*/
+
+#scrollToTopBtn {
+    display: none; /* Ocultar inicialmente */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  #scrollToTopBtn:hover {
+    background-color: var(--secondary-color);
+  }
 
 /*----------------HEADER/NAVBAR------------------------*/
 
@@ -259,6 +285,7 @@ section {
             animation-iteration-count: 1; //quantidade de vezes que a animação deve correr
             animation-direction: normal; // direção da mesma (podia ser reverse, alternate, alternate-reverse
             animation-fill-mode: none; // comportamente antes e depois da animação (podia ser forwards, backwards, both
+            margin-bottom: 30px;
         }
 
         h3 {
@@ -449,6 +476,22 @@ input {
 .skills {
     text-align: center;
     background-color: var(--third-color);
+    position: relative;
+
+
+    .background1 {
+        position: absolute;
+        top: 300px;
+        left: -540px;
+        z-index: -2;
+    }
+
+    .background2 {
+        position: absolute;
+        top: 300px;
+        right: -540px;
+        z-index: -2;
+    }
 
     h1 {
         font-size: $h1-medium-font;
@@ -509,7 +552,111 @@ input {
 }*/
 
 
+/*----------------EXPERIENCE------------------------*/
+.banner-container {
+    position: relative;
+}
 
+.banner1 {
+    position: absolute;
+    bottom: 500px;
+    left: -5px;
+    /*z-index: -2;*/
+}
+
+.banner2 {
+    position: absolute;
+    top: -300px;
+    right: -5px;
+    /*z-index: -2;*/
+}
+
+.banner3 {
+    position: absolute;
+    top: 300px;
+    left: -5px;
+    /*z-index: -2;*/
+}
+
+.experience {
+    text-align: left;
+    background-color: var(--third-color);
+
+    h1 {
+        font-size: $h1-medium-font;
+        color: var(--secondary-color);
+    }
+    .timeline {
+        position: relative;
+        max-width: 1200px;
+        margin: 100px auto;
+      }
+      
+      .container3 {
+        padding: 10px 50px;
+        position: relative;
+        width: 50%;
+      }
+      
+      .text-box {
+        padding: 20px 30px;
+        background: #f0f0f0;
+        position: relative;
+        border-radius: 6px;
+
+        h2 {
+            font-size: $h2-low-font;
+        }
+
+        h3 {
+            font-size: $h3-font;
+        }
+
+        h3, h2, p {
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+      }
+      
+      .left-container {
+        left: 0;
+      }
+      
+      .right-container {
+        left: 50%;
+      }
+      
+      .container3 i {
+        position: absolute;
+        display: grid;
+        place-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        right: -20px;
+        top: 32px;
+        z-index: 10;
+        background-color: #D9D9D9;
+        color: #4C4C4C;
+      }
+      
+      .right-container i {
+        left: -20px;
+      }
+      
+      .timeline::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: var(--timeline-height, 0); /* Define a altura conforme a variável --timeline-height */
+        background: var(--main-color);
+        top: 0;
+        left: 50%;
+        margin-left: -3px;
+        z-index: -1;
+        transition: height 0.5s; /* Adiciona uma transição suave */
+      }
+}
 
 /*----------------PORTFOLIO------------------------*/
 
@@ -528,7 +675,7 @@ input {
         margin-bottom: 50px;
     }
 
-    .slider-wrapper {
+    /*.slider-wrapper {
         position: relative;
         max-width: 100rem;
         margin: 0 auto;
@@ -570,8 +717,40 @@ input {
                 opacity: 1;
             }
         }
-    }
+    }*/
 }
+
+.card3-container {
+    /*display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 70px;*/
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(230px, 1fr));
+    gap: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  
+  .card3 {
+    /*width: 325px;
+    background-color: #fcfcfc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 0 30px 70px 30px;*/
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card3 img {
+    /*width: 100%;
+    height: 200px;*/
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+  }
 
 
 /*----------------SCROLL TOP------------------------*/
@@ -585,7 +764,7 @@ input {
         color: var(--thirdf-color);
     }
 
-    .gotop {
+    /*.gotop {
         position: absolute;
         background: var(--secondaryf-color);
         color: white;
@@ -603,7 +782,7 @@ input {
             color: var(--secondaryf-color);
             background: var(--thirdf-color);
             }
-        }
+        }*/
 }
 
 
@@ -726,7 +905,66 @@ input {
 
 
 
+@media screen and (min-width: 1600px) {
+    .background1 {
+        top: 100px;
+        left: -220px;
+    }
+}
 
+
+
+
+@media screen and (max-width: 768px) {
+    .banner-container {
+        display: none;
+    }
+
+    .card3-container {
+        grid-template-columns: repeat(1, 1fr);
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    /*Factos*/
+    .experience {
+
+        .timeline {
+            margin: 50px auto;
+        }
+
+        .timeline::after {
+            left: 31px;
+        }
+
+        .container3 {
+            width: 100%;
+            padding-left: 80px;
+            padding-right: 25px;
+        }
+
+        .text-box {
+            font-size: 13px;
+        }
+
+        .text-box h2 {
+            font-size: 30px;
+        }
+        
+        .text-box p {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .right-container {
+            left: 0;
+        }
+
+        .left-container i, .right-container i {
+            left: 10px;
+        }
+    }
+}
 
 /*
 

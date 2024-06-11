@@ -27,13 +27,14 @@
                         <li><a href="#begin">Home</a></li>
                         <li><a href="#about-me">About</a></li>
                         <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                     </ul>
                 </div>
             
                 <div class="icons">
                     <a href="https://www.linkedin.com/in/joaoaraujo17/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/jonyy_05/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/Jony-17" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
 
                 <button class="hamburguer">
@@ -58,8 +59,8 @@
             <div class="begin-text">
                 <h3>Hello,</h3>
                 <h1>I'm João Araújo<br></h1>
-                <span class="multiple-text"><br><!--ALTERAR BR | Front-End Developer--></span>
-                <a href="/curriculum-vitae/João-Araújo-CV-en.pdf" class="btn" download>Download my CV!</a>
+                <!--<span class="multiple-text"><br></span>-->
+                <a href="/curriculum-vitae/CV-JoaoAraujo.pdf" class="btn" download>Download my CV!</a>
                 <span class="divider"></span>
                 <!--<a href="#" class="btn2"></a>-->
                 <input type="checkbox" id="darkmode-toggle">
@@ -96,7 +97,14 @@
 
         <!---Skills--->
         <section class="skills" id="skills">
-            
+            <div class="background1">
+                <img src="/imgs/background1.png" alt="banner background" />
+            </div>
+
+            <div class="background2">
+                <img src="/imgs/background2.png" alt="banner background" />
+            </div>
+
             <div class="skills-text">
                 <h1>Skills</h1>
                 <h3>My Technical Level</h3>
@@ -171,6 +179,66 @@
             </div>
         </section>
 
+        <div class="banner-container">
+
+            <div class="banner1">
+                <img src="/imgs/background1.png" alt="banner background" />
+            </div>
+
+            <div class="banner2">
+                <img src="/imgs/background2.png" alt="banner background" />
+            </div>
+
+            <div class="banner3">
+                <img src="/imgs/background3.png" alt="banner background" />
+            </div>
+        </div>
+
+        <!---Experience--->
+        <section class="experience" id="experience">
+            <div class="experience-text">
+                <h1>Experience</h1>
+            </div>
+
+            <div class="timeline">
+                <!--<div class="factos-bannerImage-container">
+                    <img src="/imgs/background2.png" alt="banner background" />
+                </div>-->
+                    <div class="container3 left-container">
+                        <i class="fas fa-lightbulb"></i>
+                        <div class="text-box">
+                            <h2>CTeSP - Tecnologias e Programação de Sistemas de Informação
+                            </h2>
+                            <p>testetesteteste</p>
+                        </div>
+                    </div>
+
+                    <div class="container3 right-container">
+                        <i class="fas fa-lightbulb"></i>
+                        <div class="text-box">
+                            <h2>Intership</h2>
+                            <h3>WeCreateYou</h3>
+                            <p>I mainly worked with image editing, using Adobe Illustrator, with the
+                                aim of improving my user experience skills.</p>
+                        </div>
+                    </div>
+            </div>
+
+            <script>
+                // Função para ajustar a altura do pseudo-elemento ::after com base no scroll
+                function adjustTimelineHeight() {
+                    const timeline = document.querySelector('.timeline');
+        
+                    // Ajusta a altura conforme a posição do scroll
+                    timeline.style.setProperty('--timeline-height', `${window.scrollY}px`);
+                }
+        
+                // Adiciona um listener para o evento de rolagem da página
+                window.addEventListener('scroll', adjustTimelineHeight);
+        
+            </script>
+            
+        </section>
 
         <!---Portfolio--->
         <section class="portfolio" id="portfolio">
@@ -196,7 +264,7 @@
                         <img src="/imgs/boxchamp.jpg">
                     </label>
                 </div>
-            </div>-->
+            </div>
 
             <div class="slider-wrapper">
                 <div class="slider">
@@ -211,6 +279,34 @@
                     <a href="#slide-3"></a>
                     <a href="#slide-4"></a>
                 </div>
+            </div>-->
+
+            <div class="card3-container">
+                <div class="card3">
+                    <a href="https://github.com/Jony-17/Projeto-Portal-Saude-Mental" target="_blank">
+                        <img src="/imgs/imgs-slider/mental-health.jpg">
+                    </a>
+                </div>
+                <div class="card3">
+                    <a href="https://github.com/Jony-17/Box-Champ" target="_blank">
+                        <img src="/imgs/imgs-slider/boxchamp.jpg">
+                    </a>
+                </div>
+                <div class="card3">
+                    <!--<a href="#" target="_blank">-->
+                        <img src="/imgs/imgs-slider/jpmusicshop.jpg">
+                    </a>
+                </div>
+                <div class="card3">
+                    <a href="https://github.com/Jony-17/iLavagem" target="_blank">
+                        <img src="/imgs/imgs-slider/ilavagem.jpg">
+                    </a>
+                </div>
+                <div class="card3">
+                    <a href="https://github.com/Jony-17/Tasty-Food" target="_blank">
+                        <img src="/imgs/imgs-slider/tastyfood.jpg">
+                    </a>
+                </div>
             </div>
 
         </section>
@@ -220,11 +316,15 @@
         <section class="footer">
             <div class="footer">
                 <p>Designed and coded by João Araújo</p>
-                <a class="gotop" href="#"> <i class="fa-solid fa-chevron-up"></i> </a>
+                <!---<a class="gotop" href="#"> <i class="fa-solid fa-chevron-up"></i> </a>--->
             </div>
         </section>
 
         <div class="loader">Loading...</div>
+
+        <!--Scroll to top-->
+        <button onclick="scrollTopFunction()" id="scrollToTopBtn" title="Go to top"><i
+        class="fas fa-chevron-up"></i></button>
 
         <script src="../js/script.js"></script>
     

@@ -46,3 +46,27 @@ window.addEventListener("load", () => {
   });
 
 menu_btn.addEventListener('click', toggleMobileMenu);
+
+
+//Botão gotop
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+  if (
+    document.body.scrollTop > 500 ||
+    document.documentElement.scrollTop > 500
+  ) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+}
+
+function scrollTopFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
