@@ -15,8 +15,36 @@
 }
 
 body {
-    background: var(--primary-color);
+    /*background: var(--primary-color);*/
     overflow-x: hidden;
+}
+
+/*Texto sublinhado
+.selection\:text-custom-blue ::selection {
+    --tw-text-opacity: 1;
+    color: rgb(30, 144, 255/var(--tw-text-opacity));
+}
+
+.selection\:bg-custom-blue ::selection {
+    --tw-bg-opacity: 1;
+    background-color: rgb(30, 144, 255/var(--tw-bg-opacity));
+}*/
+
+
+  
+/*Scroll bar*/
+
+::-webkit-scrollbar {
+    width: 0.70em;
+  }
+  
+::-webkit-scrollbar-thumb {
+    background: hsl(205, 54%, 48%);
+    border-radius: 100vw;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: hsl(205, 56%, 21%);
 }
 
 
@@ -250,7 +278,7 @@ section {
     background-color: var(--third-color);
 
     &::before {
-        background-image: url(/imgs/imgs-begin/Artboard\ 4.png);
+        background-image: url(../imgs/imgs-begin/Artboard\ 4.png);
         background-repeat: no-repeat;
         //background-size: cover; //Comentar e reajustar imagem
         background-position: 70%;
@@ -435,38 +463,48 @@ input {
 
 .about-me {
     background-color: var(--third-color);
-}
 
-.about-me-about h1{
-    text-align: center;
-    color: var(--secondary-color);
-    font-size: $h1-medium-font;
-}
+    h1 {
+        text-align: left;
+        color: var(--secondary-color);
+        font-size: $h1-medium-font;
+    }
 
-.container {
-    display: flex;
-    max-width: 1600px;
-    justify-content: space-evenly;
-    align-items: center;
+    .container {
+        /*display: flex;
+        max-width: 1600px;
+        justify-content: space-evenly;
+        align-items: center;
 
-    .about-me-img img {
-        width: 25rem;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-        border-radius: 10px;
-        margin-top: 100px;
+        .about-me-img img {
+            width: 25rem;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            border-radius: 10px;
+            margin-top: 100px;
+        }*/
+
+        p {
+            color: var(--primary-color);
+            /*font-size: $p-font;*/
+            font-size: 19px;
+            text-align: justify;
+            line-height: 2;
+        }
+
+        .line {
+            width: 5%;
+            border: none;
+            height: 3px;
+            background-color: var(--secondary-color);
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 5px 0 0;
+        }
+        
+        /*.about-me-text1 {
+            margin-top: 20px;
+        }*/
     }
-    
-    .about-me-text p {
-        color: var(--primary-color);
-        font-size: $p-font;
-        text-align: justify;
-        line-height: 30px;
-    }
-    
-    .about-me-text1 {
-        margin-top: 20px;
-    }
-    
 }
 
 
@@ -605,15 +643,17 @@ input {
         border-radius: 6px;
 
         h2 {
+            color: var(--secondary-color);
             font-size: $h2-low-font;
         }
 
-        h3 {
-            font-size: $h3-font;
+        p {
+            font-size: $p-font;
+            color: var(--primary-color);
+            text-align: justify;
         }
 
-        h3, h2, p {
-            color: var(--secondary-color);
+        h2, p {
             margin-bottom: 10px;
         }
       }
@@ -648,7 +688,7 @@ input {
         content: '';
         position: absolute;
         width: 6px;
-        height: var(--timeline-height, 0); /* Define a altura conforme a variável --timeline-height */
+        /*height: var(--timeline-height, 0);*/ /* Define a altura conforme a variável --timeline-height */
         background: var(--main-color);
         top: 0;
         left: 50%;
@@ -926,7 +966,7 @@ input {
         margin-left: 0;
     }
 
-    /*Factos*/
+    /*Experience*/
     .experience {
 
         .timeline {

@@ -15,8 +15,32 @@
 }
 
 body {
-  background: var(--primary-color);
+  /*background: var(--primary-color);*/
   overflow-x: hidden;
+}
+
+/*Texto sublinhado
+.selection\:text-custom-blue ::selection {
+    --tw-text-opacity: 1;
+    color: rgb(30, 144, 255/var(--tw-text-opacity));
+}
+
+.selection\:bg-custom-blue ::selection {
+    --tw-bg-opacity: 1;
+    background-color: rgb(30, 144, 255/var(--tw-bg-opacity));
+}*/
+/*Scroll bar*/
+::-webkit-scrollbar {
+  width: 0.7em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(205, 54%, 48%);
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(205, 56%, 21%);
 }
 
 :root {
@@ -249,7 +273,7 @@ section {
   }*/
 }
 .begin::before {
-  background-image: url(/imgs/imgs-begin/Artboard\ 4.png);
+  background-image: url(../imgs/imgs-begin/Artboard\ 4.png);
   background-repeat: no-repeat;
   background-position: 70%;
   content: "";
@@ -407,33 +431,42 @@ input:checked + .change::after {
 .about-me {
   background-color: var(--third-color);
 }
-
-.about-me-about h1 {
-  text-align: center;
+.about-me h1 {
+  text-align: left;
   color: var(--secondary-color);
   font-size: 70px;
 }
-
-.container {
-  display: flex;
+.about-me .container {
+  /*display: flex;
   max-width: 1600px;
   justify-content: space-evenly;
   align-items: center;
+
+  .about-me-img img {
+      width: 25rem;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      border-radius: 10px;
+      margin-top: 100px;
+  }*/
+  /*.about-me-text1 {
+      margin-top: 20px;
+  }*/
 }
-.container .about-me-img img {
-  width: 25rem;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  border-radius: 10px;
-  margin-top: 100px;
-}
-.container .about-me-text p {
+.about-me .container p {
   color: var(--primary-color);
-  font-size: 17px;
+  /*font-size: $p-font;*/
+  font-size: 19px;
   text-align: justify;
-  line-height: 30px;
+  line-height: 2;
 }
-.container .about-me-text1 {
-  margin-top: 20px;
+.about-me .container .line {
+  width: 5%;
+  border: none;
+  height: 3px;
+  background-color: var(--secondary-color);
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 5px 0 0;
 }
 
 /*----------------SKILLS------------------------*/
@@ -553,13 +586,15 @@ input:checked + .change::after {
   border-radius: 6px;
 }
 .experience .text-box h2 {
-  font-size: 25px;
-}
-.experience .text-box h3 {
-  font-size: 25px;
-}
-.experience .text-box h3, .experience .text-box h2, .experience .text-box p {
   color: var(--secondary-color);
+  font-size: 25px;
+}
+.experience .text-box p {
+  font-size: 17px;
+  color: var(--primary-color);
+  text-align: justify;
+}
+.experience .text-box h2, .experience .text-box p {
   margin-bottom: 10px;
 }
 .experience .left-container {
@@ -588,7 +623,7 @@ input:checked + .change::after {
   content: "";
   position: absolute;
   width: 6px;
-  height: var(--timeline-height, 0); /* Define a altura conforme a variável --timeline-height */
+  /*height: var(--timeline-height, 0);*/ /* Define a altura conforme a variável --timeline-height */
   background: var(--main-color);
   top: 0;
   left: 50%;
@@ -824,7 +859,7 @@ input:checked + .change::after {
     margin-right: 0;
     margin-left: 0;
   }
-  /*Factos*/
+  /*Experience*/
   .experience .timeline {
     margin: 50px auto;
   }
