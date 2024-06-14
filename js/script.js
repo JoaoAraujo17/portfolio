@@ -70,3 +70,14 @@ function scrollTopFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
+//FAQ
+const textBoxes = document.querySelectorAll('.text-box');
+
+textBoxes.forEach((textBox) => {
+  textBox.addEventListener('click', () => {
+    const container = textBox.parentElement;
+    container.classList.toggle('active');
+  });
+});
