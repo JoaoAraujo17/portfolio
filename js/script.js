@@ -1,13 +1,13 @@
-const darkModeToggle = document.getElementById('darkmode-toggle');
+/*const darkModeToggle = document.getElementById('darkmode-toggle');*/
 const loader = document.querySelector(".loader");
 const menu_btn = document.querySelector('.hamburguer');
 const mobile_menu = document.querySelector('.nav-itens-mobile');
 const text = document.querySelector(".multiple-text");
 
 //Função Light/Dark
-function toggleDarkMode() {
+/*function toggleDarkMode() {
     document.body.classList.toggle('dark-mode', this.checked);
-}
+}*/
 
 //Função Load página
 function hideLoader() {
@@ -25,7 +25,7 @@ function toggleMobileMenu() {
 }
 
 //Função animação texto inicial
-function textLoad() {
+/*function textLoad() {
     setTimeout(() => {
       text.textContent = "Front-End Developer";
     }, 0);
@@ -35,21 +35,20 @@ function textLoad() {
     setTimeout(() => {
       text.textContent = "UX/UI Designer";
     }, 8000);
-}
+}*/
 
-darkModeToggle.addEventListener('change', toggleDarkMode);
+/*darkModeToggle.addEventListener('change', toggleDarkMode);*/
 
 window.addEventListener("load", () => {
     hideLoader();
-    textLoad(); // Inicia o ciclo de texto no carregamento da página
-    setInterval(textLoad, 12000);
+    //textLoad(); // Inicia o ciclo de texto no carregamento da página
+    //setInterval(textLoad, 12000);
   });
 
 menu_btn.addEventListener('click', toggleMobileMenu);
 
 
 //Botão gotop
-
 window.onscroll = function () {
   scrollFunction();
 };
