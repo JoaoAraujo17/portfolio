@@ -1269,12 +1269,16 @@ input {
         display: none;
     }
 
-    .begin .background-arrow {
+    /*.begin .background-arrow {
         transform: rotate(230deg);
         top: 0;
         left: 0;
         bottom: 480px;
         right: -70px;
+    }*/
+
+    .begin .background-arrow {
+        display: none;
     }
 
     /*About me*/

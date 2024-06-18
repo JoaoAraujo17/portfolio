@@ -1142,12 +1142,15 @@ input:checked + .change::after {
   .banner-container {
     display: none;
   }
+  /*.begin .background-arrow {
+      transform: rotate(230deg);
+      top: 0;
+      left: 0;
+      bottom: 480px;
+      right: -70px;
+  }*/
   .begin .background-arrow {
-    transform: rotate(230deg);
-    top: 0;
-    left: 0;
-    bottom: 480px;
-    right: -70px;
+    display: none;
   }
   /*About me*/
   .about-me h1,
