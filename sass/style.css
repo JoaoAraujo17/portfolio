@@ -1117,15 +1117,6 @@ input:checked + .change::after {
     justify-content: center;
     gap: 0;
   }
-  .wrapper .begin-text {
-    margin-top: 50px;
-  }
-  .wrapper .begin-text h1 {
-    font-size: 60px;
-  }
-  .wrapper .btn {
-    width: 60%;
-  }
   .wrapper .img1 {
     max-width: 100%;
     height: auto;
@@ -1133,7 +1124,16 @@ input:checked + .change::after {
   .wrapper .scrolldown {
     bottom: -80px;
   }
-  .wrapper .divider {
+  .wrapper .begin-text .begin-texth1 {
+    margin-top: 50px;
+  }
+  .wrapper .begin-text .begin-texth1 h1 {
+    font-size: 50px;
+  }
+  .wrapper .begin-text .btn {
+    width: 60%;
+  }
+  .wrapper .begin-text .divider {
     padding: 0;
   }
   /*Backgrounds*/
@@ -1141,6 +1141,13 @@ input:checked + .change::after {
   .background2,
   .banner-container {
     display: none;
+  }
+  .begin .background-arrow {
+    transform: rotate(230deg);
+    top: 0;
+    left: 0;
+    bottom: 480px;
+    right: -70px;
   }
   /*About me*/
   .about-me h1,

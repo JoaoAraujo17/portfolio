@@ -1233,18 +1233,6 @@ input {
         justify-content: center;
         gap: 0;
 
-        .begin-text {
-            margin-top: 50px;
-            
-            h1 {
-                font-size: 60px;
-            }
-        }
-
-        .btn {
-            width: 60%;
-        }
-
         .img1 {
             max-width: 100%;
             height: auto;
@@ -1253,9 +1241,24 @@ input {
         .scrolldown {
             bottom: -80px;
         }
+        
+        .begin-text {
 
-        .divider {
-            padding: 0;
+            .begin-texth1 {
+                margin-top: 50px;
+                
+                h1 {
+                    font-size: 50px;
+                }
+            }
+
+            .btn {
+                width: 60%;
+            }
+
+            .divider {
+                padding: 0;
+            }
         }
     }
 
@@ -1264,6 +1267,14 @@ input {
     .background2,
     .banner-container {
         display: none;
+    }
+
+    .begin .background-arrow {
+        transform: rotate(230deg);
+        top: 0;
+        left: 0;
+        bottom: 480px;
+        right: -70px;
     }
 
     /*About me*/
