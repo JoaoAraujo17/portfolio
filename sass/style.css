@@ -1071,6 +1071,8 @@ input:checked + .change::after {
   .wrapper .scrolldown {
     bottom: -70px;
   }
+  .background1,
+  .background2,
   .banner-container {
     display: none;
   }
