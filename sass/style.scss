@@ -212,6 +212,8 @@ img {
 .logo {
     color: var(--primary-color);
     font-size: $titles;
+    font-family: 'Saira Condensed';
+    font-weight: 700;
 }
 
 nav {
@@ -247,6 +249,7 @@ nav {
     /*gap: 20px;*/
     font-size: $text_icons;
     align-items: center;
+    font-weight: 600;
 
     a {
         color: var(--primary-color);
@@ -311,6 +314,13 @@ nav {
 
 .menu li {
     padding-left: 30px;
+    font-family: 'Saira Condensed';
+    font-weight: 600;
+}
+
+.menu li[data-lang="en"] {
+    position: absolute;
+    visibility: hidden;
 }
 
 .menu li a {
@@ -598,6 +608,8 @@ input {
             font-size: 19px;
             text-align: justify;
             line-height: 2;
+            font-family: 'Saira Condensed';
+            font-weight: 600;
         }
 
         .line {
@@ -796,22 +808,35 @@ input {
         h2 {
             flex: 1;
             color: var(--secondary-color);
-            font-size: 1.5em;
+            font-size: 1.7em;
         }
+        h3 {
+            flex: 1;
+            font-size: 1.4rem;
+            color: var(--primary-color);
+        }
+        p {
+            flex: 1;
+            font-size: 1.1rem;
+            color: var(--primary-color);
+        }
+        
     }
     
     .answer {
         max-height: 0;
         overflow: hidden;
         transition: max-height 1.4s ease;
-        
+
         p {
-            font-size: 17px;
+            font-size: 1.1rem;
             color: var(--primary-color);
             text-align: justify;
             padding: 0 30px 10px 30px;
             line-height: 1.6;
             overflow-wrap: break-word;
+            font-family: 'Saira Condensed';
+            font-weight: 600;
         }
     }
     
@@ -945,6 +970,8 @@ input {
     p {
         font-size: $p-font;
         color: var(--thirdf-color);
+        font-family: 'Saira Condensed';
+        font-weight: 600;
     }
 
     .footer-icons {
@@ -1094,6 +1121,8 @@ input {
     .menu li a {
         color: white;
         padding: 10px;
+        font-family: Alegreya;
+        font-weight: 600;
     }
 
     .menu li a::after {
@@ -1182,7 +1211,7 @@ input {
         }
 
         .scrolldown {
-            bottom: -50px;
+            bottom: -80px;
         }
 
         .divider {

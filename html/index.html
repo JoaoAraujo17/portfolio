@@ -10,7 +10,8 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
             integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -26,15 +27,22 @@
                     <ul class='nav-bar'>
                         <input type='checkbox' id='check' />
                         <span class="menu">
-                            <li><a href="#about-me" data-lang="pt">Sobre mim</a></li>
-                            <li><a href="#skills" data-lang="pt">Competências</a></li>
-                            <li><a href="#experience" data-lang="pt">Experiência</a></li>
-                            <li><a href="#portfolio" data-lang="pt">Portfólio</a></li>
-
-                            <li><a href="#about-me" data-lang="en" style="display: none;">About me</a></li>
-                            <li><a href="#skills" data-lang="en" style="display: none;">Skills</a></li>
-                            <li><a href="#experience" data-lang="en" style="display: none;">Experience</a></li>
-                            <li><a href="#portfolio" data-lang="en" style="display: none;">Portfolio</a></li>
+                            <li>
+                                <a href="#about-me" data-lang="pt">Sobre mim</a>
+                                <a href="#about-me" data-lang="en" style="display: none;">About me</a>
+                            </li>
+                            <li>
+                                <a href="#skills" data-lang="pt">Competências</a>
+                                <a href="#skills" data-lang="en" style="display: none;">Skills</a>
+                            </li>
+                            <li>
+                                <a href="#experience" data-lang="pt">Percurso</a>
+                                <a href="#experience" data-lang="en" style="display: none;">Route</a>
+                            </li>
+                            <li>
+                                <a href="#portfolio" data-lang="pt">Portfólio</a>
+                                <a href="#portfolio" data-lang="en" style="display: none;">Portfolio</a>
+                            </li>
                             <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
                         </span>
                         <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
@@ -92,13 +100,13 @@
             <h1 data-lang="en" style="display: none;">About me</h1>
 
             <div class="container">
-                <!--<p>Born in Porto.</p>
-                <p class="about-me-text1"><p></p>I took a Higher Professional Technical Course (CTeSP), in the area of<br>​​Information Systems Technologies and Programming (TPSI) at ISPGAYA. <br> I'm currently in my third year of Computer Engineering, also at ISPGAYA.</p>
-                <p><br>Until today, I have always tried to learn languages ​​that establish this same <br>contact, as well as tools and frameworks. I have knowledge in HTML, CSS, JavaScript <br> and Bootstrap. I do not have an academic background in ReactJS, Sass and Tailwind,<br> however, I took the initiative to learn.</p>
-                <p><br>My post-degree goal will be to do a postgraduate degree in UX/UI in order to further increase <br>my range of knowledge, as well as obtain a more in-depth view between user and interface</p>-->
-                <p data-lang="pt"><span class="line"></span>Born in Porto. I took a Higher </p>
-                <p data-lang="en" style="display: none;"><span class="line"></span>Born in Porto. I took a Higher Professional Technical Course (CTeSP), in the area of ​​Information Systems Technologies and Programming (TPSI) at ISPGAYA. I'm currently in my third year of Computer Engineering, also at ISPGAYA.
-                    Until today, I have always tried to learn languages ​​that establish this same contact, as well as tools and frameworks. I have knowledge in HTML, CSS, JavaScript and Bootstrap. I do not have an academic background in ReactJS, Sass and Tailwind, however, I took the initiative to learn.</p>
+                <p data-lang="pt"><span class="line"></span>Nascido no Porto. Apaixonado pelo desenvolvimento frontend. Adoro criar websites e aprimorar as experiências do utilizador com desempenho e acessibilidade em mente. <span class="space" style="display: block; word-break: break-word;"></span>
+                    Em 2019, iniciei um Curso Técnico Superior Profissional (CTeSP) na área de Tecnologias e Programação de Sistemas de Informação (TPSI) no ISPGAYA onde aprendi. Atualmente, estou no terceiro ano de Engenharia Informática, também no ISPGAYA.
+                    <span class="space" style="display: block; word-break: break-word;"></span>Além da programação, aprecio música, filmes, jogos e estar com amigos para recarregar as energias. Apaixonado pelo mundo da tecnologia, gosto de me manter atualizado com as novidades da área e principalmente de aprender.</p>
+                
+                <p data-lang="en" style="display: none;"><span class="line"></span>Born in Porto. Passionate about frontend development. I love creating websites and improving user experiences with performance and accessibility in mind. <span class="space" style="display: block; word-break: break-word;"></span>
+                    In 2019, I started a Higher Professional Technical Course (CTeSP) in the area of ​​Information Systems Technologies and Programming (TPSI) at ISPGAYA where I learned. I'm currently in my third year of Computer Engineering, also at ISPGAYA.
+                    <span class="space" style="display: block; word-break: break-word;"></span>In addition to programming, I enjoy music, movies, games and being with friends to recharge. Passionate about the world of technology, I like to keep up to date with new developments in the area and, above all, to learn.</p>
             </div>
 
         </section>
@@ -237,8 +245,8 @@
         <!---Experience--->
         <section class="experience" id="experience">
             <!--<div class="experience-text">-->
-                <h1 data-lang="pt">Experiência</h1>
-                <h1 data-lang="en" style="display: none;">Experience</h1>
+                <h1 data-lang="pt">Percurso</h1>
+                <h1 data-lang="en" style="display: none;">Route</h1>
             <!--</div>-->
 
             <div class="timeline">
@@ -246,24 +254,49 @@
                 <div class="container3">
                     <i></i>
                     <div class="text-box">
-                        <h2 data-lang="pt">CTeSP - Tecnologias e Programação de Sistemas de Informação</h2>
-                        <h2 data-lang="en" style="display: none;">CTeSP - Information Systems Technologies and Programming</h2>
-                        <svg width="15" height="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <div class="content">
+                            <h2 data-lang="pt">CTeSP - Tecnologias e Programação de Sistemas de Informação</h2>
+                            <h3 data-lang="pt">Instituto Superior Politécnico de Gaya</h3>
+                            <p data-lang="pt">2019 - 2021</p>
+
+                            <h2 data-lang="en" style="display: none;">CTeSP - Information Systems Technologies and Programming</h2>
+                            <h3 data-lang="en" style="display: none;">Instituto Superior Politécnico de Gaya</h3>
+                            <p data-lang="en" style="display: none;">2019 - 2021</p>
+                        </div>
+                    <svg width="15" height="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                             <path
                                 d="M207 381.5L12.7 187.1c-9.4-9.4-9.4-24.6 0-33.9l22.7-22.7c9.4-9.4 24.5-9.4 33.9 0L224 284.5l154.7-154c9.4-9.3 24.5-9.3 33.9 0l22.7 22.7c9.4 9.4 9.4 24.6 0 33.9L241 381.5c-9.4 9.4-24.6 9.4-33.9 0z" />
                         </svg>
                     </div>
                     <div class="answer">
-                        <p data-lang="pt">testetesteteste</p>
-                        <p data-lang="en" style="display: none;">teste2</p>
+                        <p data-lang="pt">
+                            <ul style="padding-left: 60px;">
+                                <li style="list-style-type: disc;">HTML</li>
+                                <li style="list-style-type: disc;">CSS</li>
+                                <li style="list-style-type: disc;">JavaScript</li>
+                                <li style="list-style-type: disc;">Bootstrap</li>
+                                <li style="list-style-type: disc;">MySQL</li>
+                                <li style="list-style-type: disc;">PHP</li>
+                                <li style="list-style-type: disc;">Java</li>
+                                <li style="list-style-type: disc;">Metodologias Agile</li>
+                            </ul>
+                        </p>
+                        <p data-lang="en" style="display: none;">
+                        </p>
                     </div>
                 </div>
             
                 <div class="container3">
                     <i></i>
                     <div class="text-box">
-                        <h2 data-lang="pt">Estágio - WeCreateYou</h2>
-                        <h2 data-lang="en" style="display: none;">Intership - WeCreateYou</h2>
+                        <div class="content">
+                            <h2 data-lang="pt">Estágio curricular</h2>
+                            <h3 data-lang="pt">WeCreateYou</h3>
+                            <p data-lang="pt">março 2021 - agosto 2021</p>
+                            <h2 data-lang="en" style="display: none;">Curricular intership</h2>
+                            <h3 data-lang="en" style="display: none;">WeCreateYou</h3>
+                            <p data-lang="en" style="display: none;">march 2021 - august 2021</p>
+                        </div>
                         <svg width="15" height="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                             <path
                                 d="M207 381.5L12.7 187.1c-9.4-9.4-9.4-24.6 0-33.9l22.7-22.7c9.4-9.4 24.5-9.4 33.9 0L224 284.5l154.7-154c9.4-9.3 24.5-9.3 33.9 0l22.7 22.7c9.4 9.4 9.4 24.6 0 33.9L241 381.5c-9.4 9.4-24.6 9.4-33.9 0z" />
@@ -280,24 +313,48 @@
                 <div class="container3">
                     <i></i>
                     <div class="text-box">
-                        <h2 data-lang="pt">Licenciatura - Engenharia Informática</h2>
-                        <h2 data-lang="en" style="display: none;">Graduation - Computer Engineering</h2>
+                        <div class="content">
+                            <h2 data-lang="pt">Licenciatura - Engenharia Informática</h2>
+                            <h3 data-lang="pt">Instituto Superior Politécnico de Gaya</h3>
+                            <p data-lang="pt">2021 - 2024</p>
+
+                            <h2 data-lang="en" style="display: none;">Graduation - Computer Engineering</h2>
+                            <h3 data-lang="en" style="display: none;">Instituto Superior Politécnico de Gaya</h3>
+                            <p data-lang="en" style="display: none;">2021 - 2024</p>
+                        </div>
                         <svg width="15" height="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                             <path
                                 d="M207 381.5L12.7 187.1c-9.4-9.4-9.4-24.6 0-33.9l22.7-22.7c9.4-9.4 24.5-9.4 33.9 0L224 284.5l154.7-154c9.4-9.3 24.5-9.3 33.9 0l22.7 22.7c9.4 9.4 9.4 24.6 0 33.9L241 381.5c-9.4 9.4-24.6 9.4-33.9 0z" />
                         </svg>
                     </div>
                     <div class="answer">
-                        <p data-lang="pt">testetesteteste</p>
-                        <p data-lang="en" style="display: none;">teste2</p>
+                        <p data-lang="pt">
+                            <ul style="padding-left: 60px;">
+                                <li style="list-style-type: disc;">Web Scraping</li>
+                                <li style="list-style-type: disc;">SQL Server</li>
+                                <li style="list-style-type: disc;">T-SQL</li>
+                                <li style="list-style-type: disc;">WebGL</li>
+                                <li style="list-style-type: disc;">Python</li>
+                                <li style="list-style-type: disc;">Raspberry Pi</li>
+                            </ul>
+                        </p>
+                        <p data-lang="en" style="display: none;">
+                        </p>
                     </div>
                 </div>
             
                 <div class="container3">
                     <i></i>
                     <div class="text-box">
-                        <h2 data-lang="pt">Estágio interno - Wideskills</h2>
-                        <h2 data-lang="en" style="display: none;">Internal Intership - Wideskills</h2>
+                        <div class="content">
+                            <h2 data-lang="pt">Estágio interno</h2>
+                            <h3 data-lang="pt">WideSkills - Instituto Superior Politécnico de Gaya</h3>
+                            <p data-lang="pt">fevereiro 2024 - julho 2024</p>
+
+                            <h2 data-lang="en" style="display: none;">Internal intership</h2>
+                            <h3 data-lang="en" style="display: none;">WideSkills - Instituto Superior Politécnico de Gaya</h3>
+                            <p data-lang="en" style="display: none;">february 2024 - july 2024</p>
+                        </div>
                         <svg width="15" height="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                             <path
                                 d="M207 381.5L12.7 187.1c-9.4-9.4-9.4-24.6 0-33.9l22.7-22.7c9.4-9.4 24.5-9.4 33.9 0L224 284.5l154.7-154c9.4-9.3 24.5-9.3 33.9 0l22.7 22.7c9.4 9.4 9.4 24.6 0 33.9L241 381.5c-9.4 9.4-24.6 9.4-33.9 0z" />
@@ -306,7 +363,8 @@
                     <div class="answer">
                         <p data-lang="pt">Projeto final de curso, denomeado de Portal de Saúde Mental, onde desenvolvi um website com o intuito de permitir aos alunos
                             do ISPGaya conhecerem e mitigarem a falta de conhecimento relativamente à importância da saúde mental na atualidade.</p>
-                        <p data-lang="en" style="display: none;">teste2</p>
+                        <p data-lang="en" style="display: none;">Final course project, called Mental Health Portal, where I developed a website with the aim of allowing students to
+                            of ISPGaya to understand and mitigate the lack of knowledge regarding the importance of mental health today.</p>
                     </div>
                 </div>
             </div>
