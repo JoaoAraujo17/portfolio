@@ -377,15 +377,6 @@ section {
       background: linear-gradient(45deg, var(--secondary-color), pink);
   }*/
 }
-.begin::before {
-  /*background-image: url(../imgs/imgs-begin/Artboard\ 4.png);*/
-  background-repeat: no-repeat;
-  background-position: 70%;
-  content: "";
-  position: absolute;
-  /*CODE FOR SET TOP, RIGHT, BOTTOM, AND LEFT AT 0*/
-  inset: 0;
-}
 .begin .begin-text {
   width: 100%;
   margin-top: 1.5rem;
@@ -546,6 +537,7 @@ input:checked + .change::after {
   background-color: var(--third-color);
 }
 .about-me h1 {
+  margin-top: 150px;
   text-align: left;
   color: var(--secondary-color);
   font-size: 70px;
@@ -623,7 +615,7 @@ input:checked + .change::after {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
-  align-items: center;
+  align-items: self-end;
   text-align: center;
   grid-gap: 20px;
   padding: 1rem 80px;
@@ -738,6 +730,7 @@ input:checked + .change::after {
   padding: 0 30px 10px 30px;
 }
 .experience .text-box h2 {
+  flex: 1;
   color: var(--secondary-color);
   font-size: 1.5em;
 }
@@ -1054,6 +1047,7 @@ input:checked + .change::after {
   .nav-itens-mobile a:hover {
       background-color: var(--primary-color);
   }*/
+  /*Begin*/
   .wrapper {
     flex-direction: column;
     align-items: center;
@@ -1067,20 +1061,32 @@ input:checked + .change::after {
     font-size: 70px;
   }
   .wrapper .btn {
-    width: 50%;
+    width: 60%;
   }
   .wrapper .img1 {
     max-width: 100%;
     height: auto;
   }
   .wrapper .scrolldown {
-    bottom: -70px;
+    bottom: -50px;
   }
+  .wrapper .divider {
+    padding: 0;
+  }
+  /*Backgrounds*/
   .background1,
   .background2,
   .banner-container {
     display: none;
   }
+  /*About me*/
+  .about-me h1,
+  .skills-text h1,
+  .experience h1,
+  .portfolio-text h1 {
+    font-size: 60px;
+  }
+  /*Portfolio*/
   .card3-container {
     grid-template-columns: repeat(1, 1fr);
     margin-right: 0;
@@ -1097,7 +1103,7 @@ input:checked + .change::after {
     font-size: 13px;
   }
   .experience .text-box h2 {
-    font-size: 30px;
+    font-size: 25px;
   }
   .experience .text-box p {
     margin-bottom: 10px;
