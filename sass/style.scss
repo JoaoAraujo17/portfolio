@@ -315,7 +315,7 @@ nav {
 .menu li {
     padding-left: 30px;
     font-family: 'Saira Condensed';
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .menu li[data-lang="en"] {
@@ -407,40 +407,69 @@ section {
     top: 25%;
     background: linear-gradient(45deg, var(--secondary-color), pink);
 }*/
+
+    .background-arrow {
+        top: 530px;
+        position: absolute;
+        left: 190px;
+        animation: bounceIn 4s;
+    }
+
     .begin-text {
 
         width: 100%;
         margin-top: 1.5rem;
         
-        h1 {
-            font-size: $h1-big-font;
-            color: var(--secondary-color);
-            line-height: 100px;
-            /*CODE TO ISOLATE CERTAIN ELEMENTS BECAUSE OF BACKGROUND IMG*/
-            isolation: isolate;
-            animation-name: fadeIn; // nome da animação
-            animation-duration: 3s; // duração da animação
-            animation-timing-function: ease-in; // curva da mesma (podia ser ease, linear, ease-out, ease-in-out, cubic-bezier(n,n,n,n)
-            animation-delay: 0s; // delay da animação (tendo 0, começa mal é dado reload na página
-            animation-iteration-count: 1; //quantidade de vezes que a animação deve correr
-            animation-direction: normal; // direção da mesma (podia ser reverse, alternate, alternate-reverse
-            animation-fill-mode: none; // comportamente antes e depois da animação (podia ser forwards, backwards, both
+        .begin-texth1 {
+            gap: 20px;
+            display: inline-grid;
             margin-bottom: 30px;
-        }
+        
+            h1 {
+                font-size: 3rem;
+                color: var(--secondary-color);
+                text-transform: uppercase;
+                line-height: 1;
+                font-weight: 700;
+                font-family: Poppins;
 
-        h3 {
-            font-size: $h3-font;
-            color: var(--secondary-color);
-            line-height: 80px;
-            /*CODE TO ISOLATE CERTAIN ELEMENTS BECAUSE OF BACKGROUND IMG*/
-            isolation: isolate;
-            animation: fadeIn 2s ease-in 0s 1 normal none; //podia ser feito desta forma também
+                /*CODE TO ISOLATE CERTAIN ELEMENTS BECAUSE OF BACKGROUND IMG*/
+                isolation: isolate;
+                animation-name: fadeIn; // nome da animação
+                animation-duration: 3s; // duração da animação
+                animation-timing-function: ease-in; // curva da mesma (podia ser ease, linear, ease-out, ease-in-out, cubic-bezier(n,n,n,n)
+                animation-delay: 0s; // delay da animação (tendo 0, começa mal é dado reload na página
+                animation-iteration-count: 1; //quantidade de vezes que a animação deve correr
+                animation-direction: normal; // direção da mesma (podia ser reverse, alternate, alternate-reverse
+                animation-fill-mode: none; // comportamente antes e depois da animação (podia ser forwards, backwards, both
+            }
+
+            h3 {
+                /*font-size: $h3-font;
+                color: var(--secondary-color);
+                line-height: 80px;*/
+
+                font-size: 3rem;
+                color: var(--secondary-color);
+                text-transform: uppercase;
+                line-height: 1;
+                font-weight: 700;
+                font-family: Poppins;
+                margin-top: 10px;
+
+                /*CODE TO ISOLATE CERTAIN ELEMENTS BECAUSE OF BACKGROUND IMG*/
+                isolation: isolate;
+                animation: fadeIn 2s ease-in 0s 1 normal none; //podia ser feito desta forma também
+                
+                margin-bottom: 30px;
+            }
         }
     }
 
     .img1 {
         max-width: 55%;
         height: auto;
+        animation: fadeIn 2s ease-in;
     }
 }
 
@@ -1197,7 +1226,7 @@ input {
             margin-top: 50px;
             
             h1 {
-                font-size: 70px;
+                font-size: 60px;
             }
         }
 

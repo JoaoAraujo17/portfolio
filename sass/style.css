@@ -298,7 +298,7 @@ nav .nav-itens > li > a:hover {
 .menu li {
   padding-left: 30px;
   font-family: "Saira Condensed";
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .menu li[data-lang=en] {
@@ -387,14 +387,28 @@ section {
       background: linear-gradient(45deg, var(--secondary-color), pink);
   }*/
 }
+.begin .background-arrow {
+  top: 530px;
+  position: absolute;
+  left: 190px;
+  animation: bounceIn 4s;
+}
 .begin .begin-text {
   width: 100%;
   margin-top: 1.5rem;
 }
-.begin .begin-text h1 {
-  font-size: 90px;
+.begin .begin-text .begin-texth1 {
+  gap: 20px;
+  display: inline-grid;
+  margin-bottom: 30px;
+}
+.begin .begin-text .begin-texth1 h1 {
+  font-size: 3rem;
   color: var(--secondary-color);
-  line-height: 100px;
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: 700;
+  font-family: Poppins;
   /*CODE TO ISOLATE CERTAIN ELEMENTS BECAUSE OF BACKGROUND IMG*/
   isolation: isolate;
   animation-name: fadeIn;
@@ -404,19 +418,27 @@ section {
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: none;
-  margin-bottom: 30px;
 }
-.begin .begin-text h3 {
-  font-size: 25px;
+.begin .begin-text .begin-texth1 h3 {
+  /*font-size: $h3-font;
   color: var(--secondary-color);
-  line-height: 80px;
+  line-height: 80px;*/
+  font-size: 3rem;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: 700;
+  font-family: Poppins;
+  margin-top: 10px;
   /*CODE TO ISOLATE CERTAIN ELEMENTS BECAUSE OF BACKGROUND IMG*/
   isolation: isolate;
   animation: fadeIn 2s ease-in 0s 1 normal none;
+  margin-bottom: 30px;
 }
 .begin .img1 {
   max-width: 55%;
   height: auto;
+  animation: fadeIn 2s ease-in;
 }
 
 .multiple-text {
@@ -1086,7 +1108,7 @@ input:checked + .change::after {
     margin-top: 50px;
   }
   .wrapper .begin-text h1 {
-    font-size: 70px;
+    font-size: 60px;
   }
   .wrapper .btn {
     width: 60%;
