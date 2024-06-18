@@ -246,10 +246,10 @@ nav {
 
 .icons {
     display: flex;
-    /*gap: 20px;*/
     font-size: $text_icons;
     align-items: center;
     font-weight: 600;
+    margin-left: 300px;
 
     a {
         color: var(--primary-color);
@@ -533,7 +533,7 @@ section {
     isolation: isolate;
     
 }
-*/
+
 
 .change {
     width: 70px;
@@ -579,8 +579,8 @@ section {
             fill: #7e7e7e;
             transition: 0.3s;
         }
-    }*/
-}
+    }
+}*/
 
 input {
     width: 0;
@@ -659,7 +659,6 @@ input {
 
 
 /*----------------SKILLS------------------------*/
-
 
 .skills {
     text-align: center;
@@ -1171,10 +1170,22 @@ input {
     }
 
     .icons {
-       /* z-index: 999; */
-       display: none;
+        margin-left: 0;
+        margin-top: 20px;
+
+        .lang-toggle,
+        .language-toggle,
+        .dark-mode-toggle {
+            color: white;
+        }
+        .lang-toggle:hover,
+        .language-toggle:hover,
+        .dark-mode-toggle:hover {
+            color: var(--secondary-color);
+        }
     }
-    
+
+
     /*.toggle_btn {
         display: block;
     }
