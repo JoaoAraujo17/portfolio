@@ -1,57 +1,80 @@
-/*const darkModeToggle = document.getElementById('darkmode-toggle');*/
-const loader = document.querySelector(".loader");
-const menu_btn = document.querySelector('.hamburguer');
-const mobile_menu = document.querySelector('.nav-itens-mobile');
-const text = document.querySelector(".multiple-text");
+/*const toggle_btn = document.querySelector(".toggle_btn");
+const mobile_menu = document.querySelector(".nav-itens-mobile");
 
-//Função Light/Dark
-/*function toggleDarkMode() {
-    document.body.classList.toggle('dark-mode', this.checked);
-}*/
+// Função para alternar a visibilidade do menu móvel e alterar o ícone
+toggle_btn.addEventListener("click", function () {
+  toggle_btn.classList.toggle("open"); // Alternar classe para animar o ícone
 
-//Função Load página
-function hideLoader() {
-    loader.classList.add("loader--hidden");
+  if (toggle_btn.classList.contains("open")) {
+    // Se o menu está aberto, mostrar ícone de X
+    toggle_btn.innerHTML = '<i class="fas fa-times"></i>';
+  } else {  
+    // Se o menu está fechado, mostrar ícone de barras
+    toggle_btn.innerHTML = '<i class="fas fa-bars"></i>';
+  }
 
-    loader.addEventListener("transitionend", () => {
-        document.body.removeChild(loader);
+  mobile_menu.classList.toggle("show"); // Alternar visibilidade do menu móvel
+});*/
+
+// JavaScript para alternar idiomas
+const langPT = document.querySelectorAll('[data-lang="pt"]');
+    const langEN = document.querySelectorAll('[data-lang="en"]');
+    const langTogglePT = document.getElementById('lang-pt');
+    const langToggleEN = document.getElementById('lang-en');
+
+    // Função para definir o idioma com base na escolha armazenada
+    function setLanguage(lang) {
+        if (lang === 'pt') {
+            langPT.forEach(element => element.style.display = 'block');
+            langEN.forEach(element => element.style.display = 'none');
+            localStorage.setItem('language', 'pt'); // Salvar escolha no localStorage
+        } else if (lang === 'en') {
+            langPT.forEach(element => element.style.display = 'none');
+            langEN.forEach(element => element.style.display = 'block');
+            localStorage.setItem('language', 'en'); // Salvar escolha no localStorage
+        }
+    }
+
+    // Exemplo de evento de clique para alternar para português
+    langTogglePT.addEventListener('click', function(event) {
+        event.preventDefault();
+        setLanguage('pt');
     });
-}
 
-//Função mobile responsive
-function toggleMobileMenu() {
-    menu_btn.classList.toggle('is-active');
-    mobile_menu.classList.toggle('is-active');
-}
+    // Exemplo de evento de clique para alternar para inglês
+    langToggleEN.addEventListener('click', function(event) {
+        event.preventDefault();
+        setLanguage('en');
+    });
 
-//Função animação texto inicial
-/*function textLoad() {
-    setTimeout(() => {
-      text.textContent = "Front-End Developer";
-    }, 0);
-    setTimeout(() => {
-      text.textContent = "Full-Stack Developer";
-    }, 4000);
-    setTimeout(() => {
-      text.textContent = "UX/UI Designer";
-    }, 8000);
-}*/
+    // Verificar se há idioma salvo no localStorage e aplicar
+    const savedLanguage = localStorage.getItem('language');
+    if (savedLanguage) {
+        setLanguage(savedLanguage); // Aplicar o idioma salvo
+    } else {
+        // Se não houver idioma salvo, definir como padrão (por exemplo, português)
+        setLanguage('pt');
+    }
 
-/*darkModeToggle.addEventListener('change', toggleDarkMode);*/
 
-window.addEventListener("load", () => {
-    hideLoader();
-    //textLoad(); // Inicia o ciclo de texto no carregamento da página
-    //setInterval(textLoad, 12000);
+// Função para esconder o loader após o carregamento da página
+const loader = document.querySelector(".loader");
+function hideLoader() {
+  loader.classList.add("loader--hidden");
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
   });
+}
 
-menu_btn.addEventListener('click', toggleMobileMenu);
+// Esconde o loader após o carregamento da página
+window.addEventListener("load", () => {
+  hideLoader();
+});
 
-
-//Botão gotop
-window.onscroll = function () {
+// Função gotop para mostrar/esconder o botão de rolar para o topo
+window.addEventListener("scroll", () => {
   scrollFunction();
-};
+});
 
 function scrollFunction() {
   var scrollToTopBtn = document.getElementById("scrollToTopBtn");
@@ -70,13 +93,12 @@ function scrollTopFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-
-//FAQ
-const textBoxes = document.querySelectorAll('.text-box');
+// FAQ
+const textBoxes = document.querySelectorAll(".text-box");
 
 textBoxes.forEach((textBox) => {
-  textBox.addEventListener('click', () => {
+  textBox.addEventListener("click", () => {
     const container = textBox.parentElement;
-    container.classList.toggle('active');
+    container.classList.toggle("active");
   });
 });
