@@ -586,6 +586,9 @@ section {
   font-family: "Saira Condensed";
   font-weight: 600;
 }
+.experience .container3 .answer ul li {
+  color: var(--secondary-color);
+}
 .experience .container3 svg {
   transition: transform 0.5s ease-in;
 }

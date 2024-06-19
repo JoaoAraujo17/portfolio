@@ -662,6 +662,10 @@ section {
                 font-family: 'Saira Condensed';
                 font-weight: 600;
             }
+            
+            ul li {
+                color: var(--secondary-color);
+            }
         }
         svg {
             transition: transform 0.5s ease-in;
