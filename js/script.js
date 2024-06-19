@@ -18,43 +18,43 @@ toggle_btn.addEventListener("click", function () {
 
 // JavaScript para alternar idiomas
 const langPT = document.querySelectorAll('[data-lang="pt"]');
-    const langEN = document.querySelectorAll('[data-lang="en"]');
-    const langTogglePT = document.getElementById('lang-pt');
-    const langToggleEN = document.getElementById('lang-en');
+const langEN = document.querySelectorAll('[data-lang="en"]');
+const langTogglePT = document.getElementById('lang-pt');
+const langToggleEN = document.getElementById('lang-en');
 
-    // Função para definir o idioma com base na escolha armazenada
-    function setLanguage(lang) {
-        if (lang === 'pt') {
-            langPT.forEach(element => element.style.display = 'block');
-            langEN.forEach(element => element.style.display = 'none');
-            localStorage.setItem('language', 'pt'); // Salvar escolha no localStorage
-        } else if (lang === 'en') {
-            langPT.forEach(element => element.style.display = 'none');
-            langEN.forEach(element => element.style.display = 'block');
-            localStorage.setItem('language', 'en'); // Salvar escolha no localStorage
-        }
+// Função para definir o idioma com base na escolha armazenada
+function setLanguage(lang) {
+    if (lang === 'pt') {
+        langPT.forEach(element => element.style.display = 'block');
+        langEN.forEach(element => element.style.display = 'none');
+        localStorage.setItem('language', 'pt'); // Salvar escolha no localStorage
+    } else if (lang === 'en') {
+        langPT.forEach(element => element.style.display = 'none');
+        langEN.forEach(element => element.style.display = 'block');
+        localStorage.setItem('language', 'en'); // Salvar escolha no localStorage
     }
+}
 
-    // Exemplo de evento de clique para alternar para português
-    langTogglePT.addEventListener('click', function(event) {
-        event.preventDefault();
-        setLanguage('pt');
-    });
+// Exemplo de evento de clique para alternar para português
+langTogglePT.addEventListener('click', function(event) {
+    event.preventDefault();
+    setLanguage('pt');
+});
 
-    // Exemplo de evento de clique para alternar para inglês
-    langToggleEN.addEventListener('click', function(event) {
-        event.preventDefault();
-        setLanguage('en');
-    });
+// Exemplo de evento de clique para alternar para inglês
+langToggleEN.addEventListener('click', function(event) {
+    event.preventDefault();
+    setLanguage('en');
+});
 
-    // Verificar se há idioma salvo no localStorage e aplicar
-    const savedLanguage = localStorage.getItem('language');
-    if (savedLanguage) {
-        setLanguage(savedLanguage); // Aplicar o idioma salvo
-    } else {
-        // Se não houver idioma salvo, definir como padrão (por exemplo, português)
-        setLanguage('pt');
-    }
+// Verificar se há idioma salvo no localStorage e aplicar
+const savedLanguage = localStorage.getItem('language');
+if (savedLanguage) {
+    setLanguage(savedLanguage); // Aplicar o idioma salvo
+} else {
+    // Se não houver idioma salvo, definir como padrão (por exemplo, português)
+    setLanguage('pt');
+}
 
 
 // Função para esconder o loader após o carregamento da página
