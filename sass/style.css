@@ -599,21 +599,21 @@ section {
   transform: rotate(180deg);
 }
 
-/*----------------PORTFOLIO------------------------*/
-.portfolio {
+/*----------------PROJECTS------------------------*/
+.projects {
   text-align: center;
   background-color: var(--third-color);
 }
-.portfolio h1 {
+.projects h1 {
   font-size: 70px;
   color: var(--secondary-color);
 }
-.portfolio h3 {
+.projects h3 {
   font-size: 25px;
   color: var(--primary-color);
   margin-bottom: 50px;
 }
-.portfolio .card3-container {
+.projects .card3-container {
   margin-top: 70px;
   display: grid;
   grid-template-columns: repeat(3, minmax(230px, 1fr));
@@ -621,18 +621,18 @@ section {
   margin-left: 100px;
   margin-right: 100px;
 }
-.portfolio .card3-container .card3 {
+.projects .card3-container .card3 {
   display: flex;
   flex-direction: column;
   position: relative;
 }
-.portfolio .card3-container .card3 img {
+.projects .card3-container .card3 img {
   width: 100%;
   height: 230px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.portfolio .card3-container .card3 .overlay {
+.projects .card3-container .card3 .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -645,12 +645,12 @@ section {
   opacity: 0;
   transition: opacity 0.3s ease; /* Smooth transition effect */
 }
-.portfolio .card3-container .card3 .overlay a {
+.projects .card3-container .card3 .overlay a {
   color: white;
   font-size: 35px;
   text-decoration: none;
 }
-.portfolio .card3-container .card3:hover .overlay {
+.projects .card3-container .card3:hover .overlay {
   opacity: 1;
 }
 
@@ -903,7 +903,7 @@ section {
   .about-me h1,
   .skills-text h1,
   .experience h1,
-  .portfolio-text h1 {
+  .projects-text h1 {
     font-size: 60px;
   }
   /*Experience*/
@@ -923,8 +923,8 @@ section {
     margin-bottom: 10px;
     font-size: 16px;
   }
-  /*Portfolio*/
-  .portfolio .card3-container {
+  /*Projects*/
+  .projects .card3-container {
     grid-template-columns: repeat(1, 1fr);
     margin-right: 0;
     margin-left: 0;

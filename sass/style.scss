@@ -683,9 +683,9 @@ section {
     }
 }
 
-/*----------------PORTFOLIO------------------------*/
+/*----------------PROJECTS------------------------*/
 
-.portfolio {
+.projects {
     text-align: center;
     background-color: var(--third-color);
 
@@ -1044,7 +1044,7 @@ section {
     .about-me h1,
     .skills-text h1,
     .experience h1,
-    .portfolio-text h1 {
+    .projects-text h1 {
         font-size: 60px;
     }
 
@@ -1073,8 +1073,8 @@ section {
         }
     }
 
-    /*Portfolio*/
-    .portfolio {
+    /*Projects*/
+    .projects {
         .card3-container {
             grid-template-columns: repeat(1, 1fr);
             margin-right: 0;
